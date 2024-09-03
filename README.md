@@ -15,12 +15,11 @@ En este proyecto, se desarrollan varias actividades que incluyen la creación de
 ## Estructura del Repositorio
 
 ```bash
-├── README.md            # Este archivo
-├── src/                 # Código fuente de las actividades
-│   ├── cesar.py         # Implementación del cifrado César
-│   ├── pingv4.py        # Código para el envío de pings stealth
-│   └── mitm.py          # Código para descifrar los mensajes capturados
-├── docs/                # Documentación y reportes
-│   └── Informe_Lab1.pdf # Informe detallado del laboratorio
-└── data/                # Archivos de datos utilizados
-    └── ejemplo.pcapng   # Captura de paquetes para análisis
+├── README.md                             # Este archivo
+├── src/                                  # Código fuente de las actividades
+│   ├── cesar.py                          # Implementación del cifrado César
+│   ├── pingv4.py                         # Código para el envío de pings stealth
+│   ├── readv2.py                         # Código para descifrar los mensajes capturados
+│   └── cesar.pcapng                      # Archivos de datos utilizados
+└── docs/                                 # Documentación y reportes
+    └── Lab01_Cripto_Renato_Contreras.pdf # Informe detallado del laboratorio
