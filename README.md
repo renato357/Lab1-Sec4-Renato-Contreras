@@ -23,3 +23,10 @@ En este proyecto, se desarrollan varias actividades que incluyen la creación de
 │   └── cesar.pcapng                      # Archivos de datos utilizados
 └── docs/                                 # Documentación y reportes
     └── Lab01_Cripto_Renato_Contreras.pdf # Informe detallado del laboratorio
+```
+## Contacto
+
+Para consultas o más información, por favor contacta a:
+
+**Renato Óscar Benjamín Contreras Carvajal**  
+Correo: [renato.contreras@mail.udp.cl](mailto:renato.contreras@mail.udp.cl)
