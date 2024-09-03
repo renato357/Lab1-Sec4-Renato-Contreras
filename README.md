@@ -16,6 +16,7 @@ En este proyecto, se desarrollan varias actividades que incluyen la creación de
 
 ```bash
 ├── README.md                             # Este archivo
+├── img/                                  # Carpeta con todas las imágenes
 ├── src/                                  # Código fuente de las actividades
 │   ├── cesar.py                          # Implementación del cifrado César
 │   ├── pingv4.py                         # Código para el envío de pings stealth
