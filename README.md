@@ -21,7 +21,8 @@ En este proyecto, se desarrollan varias actividades que incluyen la creación de
 │   ├── cesar.py                          # Implementación del cifrado César
 │   ├── pingv4.py                         # Código para el envío de pings stealth
 │   ├── readv2.py                         # Código para descifrar los mensajes capturados
-│   └── cesar.pcapng                      # Archivos de datos utilizados
+│   ├── 5pings+33trama+5pings.pcapng      # Archivo de datos con pings reales
+│   └── cesar.pcapng                      # Archivos de datos utilizados en actividad 3
 └── docs/                                 # Documentación y reportes
     └── Lab01_Cripto_Renato_Contreras.pdf # Informe detallado del laboratorio
 ```
