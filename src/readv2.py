@@ -29,13 +29,16 @@ def leer_paquetes_y_descifrar(archivo_pcap):
         print(f"Archivo {archivo_pcap} no encontrado.")
         sys.exit(1)
 
-    # Extraer los primeros 8 bytes del campo de datos ICMP de cada paquete
+    # Extraer el byte del carácter enviado del campo de datos ICMP de cada paquete
     icmp_data = []
     for packet in packets:
-        if ICMP in packet and packet[ICMP].type == 8:  # Tipo 8 es Echo request
+        if ICMP in packet and packet[ICMP].type in [13, 14]:  # Tipos 13 y 14 para Timestamp Request/Reply
             payload = bytes(packet[ICMP].payload)
-            first_8_bytes = payload[:8]  # Obtener los primeros 8 bytes del payload
-            icmp_data.append(first_8_bytes)
+            # Verificar que el payload tenga al menos 9 bytes (8 bytes estáticos + 1 byte de carácter)
+            if len(payload) >= 9:
+                # Obtener el carácter enviado que está después de los primeros 8 bytes estáticos
+                char_byte = payload[8:9]
+                icmp_data.append(char_byte)
 
     # Unir todos los bytes de los paquetes en un solo string de caracteres
     icmp_string = ''.join([bytes.decode(d, errors='ignore') for d in icmp_data])
